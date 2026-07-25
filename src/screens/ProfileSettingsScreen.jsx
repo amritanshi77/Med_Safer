@@ -88,3 +88,10 @@ export default function ProfileSettingsScreen({ navigate }) {
         <button onClick={() => navigate("splash")} className="flex items-center justify-center gap-2 text-danger font-semibold text-base py-3">
           <LogOut size={18} />
           Log Out
+        </button>
+      </div>
+
+      <BottomNav active="profile" onNavigate={navigate} />
+    </div>
+  );
+}

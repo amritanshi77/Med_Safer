@@ -37,4 +37,21 @@ export default function MedicineDetailsScreen({ navigate }) {
             <AlertCircle size={20} className="text-moderate" />
             <h2 className="font-display font-semibold text-lg text-navy">Possible Side Effects</h2>
           </div>
-          <ul className="flex flex-col gap-2"></ul>
+          <ul className="flex flex-col gap-2">
+            {m.sideEffects.map((s) => (
+              <li key={s} className="flex items-center gap-2 text-navy/90 text-base">
+                <span className="w-1.5 h-1.5 rounded-full bg-moderate shrink-0" />
+                {s}
+              </li>
+            ))}
+          </ul>
+        </Card>
+
+        <Button variant="secondary" icon={Volume2} onClick={() => navigate("voice")}>
+          Read Information Aloud
+        </Button>
+        <Button onClick={() => navigate("interaction")}>Check Interactions</Button>
+      </div>
+    </div>
+  );
+}
