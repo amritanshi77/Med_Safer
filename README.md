@@ -2,7 +2,7 @@
 
 
 
-\*\*Smart Medicine Safety for Everyone\*\* — an accessible, elderly-friendly mobile UI prototype for a healthcare AI app that uses OCR and AI-powered drug interaction detection.
+Smart Medicine Safety for Everyone— an accessible, elderly-friendly mobile UI prototype for a healthcare AI app that uses OCR and AI-powered drug interaction detection.
 
 
 
@@ -32,11 +32,11 @@
 
 \## Design system
 
-\- \*\*Palette:\*\* white, soft blue (`#EAF4FB`), teal (`#2A9D8F`), navy text (`#1B2A3B`), safe green / moderate amber / danger coral for interaction severity.
+\-Palette: white, soft blue (`#EAF4FB`), teal (`#2A9D8F`), navy text (`#1B2A3B`), safe green / moderate amber / danger coral for interaction severity.
 
-\- \*\*Type:\*\* Poppins (headings) + Inter (body), large sizes by default, user-adjustable in Settings.
+\- Type: Poppins (headings) + Inter (body), large sizes by default, user-adjustable in Settings.
 
-\- \*\*Accessibility:\*\* high-contrast text, 44px+ tap targets, visible keyboard focus rings, `prefers-reduced-motion` respected.
+\- Accessibility: high-contrast text, 44px+ tap targets, visible keyboard focus rings, `prefers-reduced-motion` respected.
 
 \- All tokens live in `tailwind.config.js` — change colors/fonts there to re-theme the whole app.
 
@@ -50,13 +50,13 @@ React 18 + Vite + Tailwind CSS + \[lucide-react](https://lucide.dev) icons. Plai
 
 \## Run locally
 
-\\`\\`\\`bash
+'''
 
 npm install
 
 npm run dev
 
-\\`\\`\\`
+'''
 
 Then open the printed local URL (usually `http://localhost:5173`).
 
@@ -64,19 +64,19 @@ Then open the printed local URL (usually `http://localhost:5173`).
 
 \## Build for production
 
-\\`\\`\\`bash
+'''
 
 npm run build
 
 npm run preview
 
-\\`\\`\\`
+'''
 
 
 
 \## Project structure
 
-\\`\\`\\`
+'''
 
 src/
 
@@ -90,5 +90,5 @@ src/
 
 &#x20; index.css     # global styles, accessibility defaults
 
-\\`\\`\\`
+'''
 
